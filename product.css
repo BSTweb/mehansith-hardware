@@ -1,0 +1,59 @@
+/* New Arraivals----------------------------- */
+
+.suppliers{
+    margin-top: 1rem;
+
+}
+
+.suppliers_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.supplier{
+    background:  rgb(233, 196, 116);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.supplier:hover{
+    background: transparent;
+    border-color: var(--color-ex);
+}
+
+.supplier_info{
+    padding: 2rem;
+}
+
+.supplier_info a{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+/* Media Queries (TABLETS) ---------------------*/
+
+@media screen and (max-width: 1024px){
+    .suppliers{
+        margin-top: 5px;
+    }
+    
+    .suppliers_container{
+        grid-template-columns:1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Media Queries (Mobile) ---------------------*/
+
+@media screen and (max-width: 600px){
+    .suppliers{
+        margin-top: 2px;
+    }
+    
+    .suppliers_container{
+        grid-template-columns:1fr;
+        gap: 1.5rem;
+    }
+}
